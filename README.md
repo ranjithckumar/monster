@@ -1,5 +1,7 @@
 This is a Monster Rolodex simple Reactjs application.
 
+![pic](https://github.com/ranjithckumar/monster/blob/master/images/Screenshot%20(24).png)
+
 ## Available Scripts
 
 In the project directory, you can run:
