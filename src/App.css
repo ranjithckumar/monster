@@ -25,3 +25,10 @@
   background-color: aliceblue;
    border-radius: 10px;
 }
+
+h1{
+  font-family: 'Bigelow Rules';
+  margin:0;
+  font-size: 75px;
+  color: darkturquoise;
+}

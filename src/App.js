@@ -30,6 +30,7 @@ class App extends React.Component{
       );
     return (
       <div className="App">
+        <h1>Monster Rolodex</h1>
         {/* Using search value here we updating searchField state  and passing props(placeholder,handleChange) 
         to SeachBox component*/}
         <SearchBox
