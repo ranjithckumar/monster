@@ -18,6 +18,10 @@ class App extends React.Component{
     .then(response=>response.json())
     .then(users=>this.setState({monster:users}))
   }
+  // Handle fuction for onChange event(Synthetic event)
+  handleChange=(e)=>{
+    this.setState({searchField:e.target.value});
+  }
   render(){
     // by applying filter, we checking  wether the search value(searchField) is present in state(monster) 
     const {monster,searchField}=this.state;
@@ -30,9 +34,9 @@ class App extends React.Component{
         to SeachBox component*/}
         <SearchBox
            placeholder="Search monster"
-           handleChange={e=> this.setState({searchField:e.target.value})}
+           handleChange={this.handleChange}
         />
-        {/* here we calli CardList component by passing state(monster) as props */}
+        {/* here we calling CardList component by passing state(monster) as props */}
         <CardList monster={filteredMonster}/>
       </div>
     );
